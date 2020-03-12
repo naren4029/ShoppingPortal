@@ -1,0 +1,47 @@
+{
+  "configVersion": 1,
+  "index": "https://naren4029.github.io/ShoppingPortal/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://naren4029.github.io/ShoppingPortal/index.html",
+        "https://naren4029.github.io/ShoppingPortal/inline.318b50c57b4eba3d437b.bundle.js",
+        "https://naren4029.github.io/ShoppingPortal/main.c44f8bc809cf33af9794.bundle.js",
+        "https://naren4029.github.io/ShoppingPortal/polyfills.e984deee4b28eb49ced8.bundle.js",
+        "https://naren4029.github.io/ShoppingPortal/styles.4182d8581d5fd98a25da.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.eot",
+        "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.svg",
+        "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.ttf",
+        "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.woff",
+        "https://naren4029.github.io/ShoppingPortal/assets/images/200X200.png",
+        "https://naren4029.github.io/ShoppingPortal/assets/images/900X900.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://naren4029.github.io/ShoppingPortal/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.eot": "d66dde1f26aed0ebf34e3a2e89e444de5a7ca02d",
+    "https://naren4029.github.io/ShoppingPortal/main.c44f8bc809cf33af9794.bundle.js": "ace527c3a7f6bc348808bf59774faed76a631d24",
+    "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.svg": "9b57125a06d43da2bd91b551606bede192bc59ce",
+    "https://naren4029.github.io/ShoppingPortal/polyfills.e984deee4b28eb49ced8.bundle.js": "48edb9cf55e6ea70b6e536fbab906fd1739d9e07",
+    "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.ttf": "35acab9f97ad6f41a1f306b4121af66b551beb5a",
+    "https://naren4029.github.io/ShoppingPortal/styles.4182d8581d5fd98a25da.bundle.css": "63e37dce05e6a053fa47045e8e49e3dfb89a70f2",
+    "https://naren4029.github.io/ShoppingPortal/assets/fonts/icomoon.woff": "ab25380c3a4fa7aac8957f6dca4b2bd8dbfadc29",
+    "https://naren4029.github.io/ShoppingPortal/index.html": "64d9bafc72043586a3482ef672f138de725f040b",
+    "https://naren4029.github.io/ShoppingPortal/assets/images/200X200.png": "6cf9f44a8118ac635cdaa059aa54dd21b9dcb957",
+    "https://naren4029.github.io/ShoppingPortal/assets/images/900X900.png": "e780a89ddb957b71c6d13443174cadc58e7b1ddd"
+  }
+}
