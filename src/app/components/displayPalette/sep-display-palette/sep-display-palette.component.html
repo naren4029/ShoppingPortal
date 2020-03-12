@@ -3,7 +3,7 @@
   <div class="diaplaySectionCls" [ngClass]="{'animateRight':i%2==0,'animateLeft':i%2!=0}" *ngFor="let obj of dataArr; let i=index">
     <div class="imgPnlCls">
       <a class="routeLinkCls" routerLink="/SingleProductView/{{obj.id}}">
-        <img src="../../../../assets/images/200X200.png" >
+        <img src="assets/images/200X200.png" >
       </a>
     </div>
     <div class="productNameCls">{{obj.attributes.name}}</div>
