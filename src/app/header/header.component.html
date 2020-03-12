@@ -1,0 +1,20 @@
+<div class="headerComponentCls">
+  <div class="brandLogo" ></div>
+  <div class="menuPnlCls">
+    <span class="icon-placeholder hamBurgerIconCls" [ngClass]="{'hamBurgerIcon':!toggleMenuFlag,'closeIcon':toggleMenuFlag}" *ngIf="windowObj.clientX<=922" (click)="toggleMenuFn();"></span>
+    <ul class="menuListPnlCls" [ngClass]="{'showMenuListPnlCls': toggleMenuFlag}">
+      <a routerLink="/Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        Home
+      </a>
+      <a routerLink="/Brushes" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        Brushes
+      </a>
+      <a routerLink="/Makeup" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        Makeup
+      </a>
+      <a routerLink="/Tools" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        Tools
+      </a>
+    </ul>
+  </div>
+</div>

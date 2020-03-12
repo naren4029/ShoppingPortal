@@ -1,0 +1,9 @@
+<div class="sepFilterPnlCls" *ngFor="let sec of dataArr;let i = index">
+  <div class="sepFilterHdrCls" [ngClass]="{'sepFilterHdrCollCls':toggFlag[i]}">
+    {{sec.hdrLbl}}
+    <span class="icon-placeholder sepFilterCollapseCls" [ngClass]="{'sepFilterExpandCls': toggFlag[i]}" (click)="toggleCollapse(i);"></span>
+  </div>
+  <div class="sepFilterBodyCls" [ngClass]="{'hideHeightCls': toggFlag[i]}">
+      <app-product-filter [dataArr]=sec.data></app-product-filter>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.sepFilterPnlCls{
+    padding: 5px;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    box-shadow: 1px 2px 4px #ccc;
+}
+.sepFilterHdrCls{
+    font-weight: bold;
+    color: #E91E63
+}
+.sepFilterPnlCls .sepFilterHdrCls{
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+}
+.sepFilterPnlCls .sepFilterHdrCollCls{
+    border-bottom:none;
+}
+.sepFilterCollapseCls,.sepFilterExpandCls{    
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+}
+.sepFilterCollapseCls{
+    transform: rotate(-90deg);
+}
+.sepFilterExpandCls{
+    transform: rotate(90deg);
+}
+.sepFilterCollapseCls::before{
+    content: "\e905";
+}
+.hideHeightCls{
+    height: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,35 @@
+<div class="pageNavPnlCls">
+  <div class="responsiveFilter" *ngIf="windowObj.clientX<=922">
+    <span class="icon-placeholder filterMobIconCls" [ngClass]="{'filterIconCls':!toggleExpFlag,'closeIcon':toggleExpFlag}" (click)="toggleExpFn();"></span>
+    <div class="responsiveFilterPnl" [ngClass]="{'resFilterPnlExp':toggleExpFlag}">
+      <app-sep-filter-panel [dataArr]=dataArr ></app-sep-filter-panel>
+    </div>
+  </div>
+  <label  *ngIf="sortData && sortData.length>0">
+      <span class="lblCls">
+        Sort :
+      </span>
+      <span class="valCls">
+        <select [(ngModel)]=obj.sort  (change)="onSelectionChange(obj,'sort');">
+          <option *ngFor="let opt of sortData" value="{{opt.value}}">{{opt.label}}</option>
+        </select>
+      </span>
+  </label>
+  <label  *ngIf="viewData && viewData.length>0">
+      <span class="lblCls">
+        View :
+      </span>
+      <span class="valCls">
+        <select [(ngModel)]=obj.page.size  (change)="onSelectionChange(obj,'size');">
+          <option *ngFor="let opt of viewData" value="{{opt.value}}">{{opt.label}}</option>
+        </select>
+      </span>
+  </label>
+  <span class="pagerCls"  *ngIf="obj && obj.page && obj.page.number">
+    <span class="icon-placeholder firstPgCls" (click)="firstPgFn();" [ngClass]="{'pageNavDisabledCls':obj.page.number==1}"></span>
+    <span class="icon-placeholder prevPgCls" (click)="prevPgFn();" [ngClass]="{'pageNavDisabledCls':obj.page.number==1}"></span>
+    <input type="text" disabled="disabled" [(ngModel)]=obj.page.number>
+    <span class="icon-placeholder nextPgCls" (click)="nextPgFn();" [ngClass]="{'pageNavDisabledCls':obj.page.number==lastPgNum}"></span>
+    <span class="icon-placeholder lastPgCls" (click)="lastPgFn();" [ngClass]="{'pageNavDisabledCls':obj.page.number==lastPgNum}"></span>
+  </span>
+</div>

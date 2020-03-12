@@ -1,0 +1,64 @@
+/*  File:headerComponent.css
+    Description: Contains styles for Page Header
+*/
+.headerComponentCls{
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    min-height: 60px;
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 0 5px;
+}
+.brandLogo{
+    background: #fff url('/assets/images/sephora_logo.svg') no-repeat 5px 20px;
+    height: 60px;
+    width: 190px;
+    background-size: 187px;
+    float: left;
+}
+.menuListPnlCls{
+    margin-top: 28px;
+}
+.menuListPnlCls a{
+    padding: 5px 10px;
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+.menuListPnlCls a:last-child {
+    border-right: 1px solid #ccc;
+}
+.menuListPnlCls a.active{
+    box-shadow: 0 5px 3px #ccc;
+    color: #E91E63;
+    background: linear-gradient(#fff 50%,#ccc);
+}
+.hamBurgerIconCls {
+    padding: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+    border: 1px solid #ccc;
+    float: right;
+    margin-top: 7px;
+    border-radius: 5px;
+    position: relative;
+    transition:transform 0.5s;
+}
+@keyframes hamBurgerAnim{from{opacity: 0} to{opacity: 1}}
+@keyframes closeAnim{from{opacity: 0} to{opacity: 1}}
+.hamBurgerIcon::before{
+    content: "\f0c9";    
+    animation:hamBurgerAnim 1s;
+}
+.hamBurgerIcon{
+    transform: scaleX(-1);
+}
+.closeIcon{
+    transform: scaleX(1);
+}
+.closeIcon::before{
+    content: "\e908";
+    animation:closeAnim 1s;
+}
+.menuPnlCls{
+    float: right;
+}

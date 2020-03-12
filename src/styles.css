@@ -1,0 +1,128 @@
+/*  File:styles.css
+    Description: Contains Golobal Css for the entire application
+*/
+@font-face {
+    font-family: "icomoon";
+    src: url('/assets/fonts/icomoon.ttf') format('truetype');
+    src: url('/assets/fonts/icomoon.eot') format('embedded-opentype');
+    src: url('/assets/fonts/icomoon.svg') format('svg');
+    src: url('/assets/fonts/icomoon.woff') format('woff');
+  }
+  .icon-placeholder{
+    color: #000;
+    font-size: 24px;
+    font-family: icomoon;
+    display: inline-block;
+    cursor: pointer;
+  }
+html,body{
+    margin: 0;
+    height: 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    overflow-x: hidden;
+}
+.sepBodyCls{
+    margin: 0 10px;
+    float: left;
+    width: 98%;
+}
+::selection{background:#ffb7b7}
+li { list-style: none;}
+ul {padding-left: 10px;}
+select{
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+@media all and (min-width:922px) and (max-width:1135px){
+    .displayPaletteCls{
+        width: 76% !important;
+    }
+}
+@media all and (max-width:923px){
+    .displayPaletteCls{
+        width: 95% !important;
+    }
+    .sepFilterPnlCls{
+        box-shadow: none !important;
+    }
+    .menuListPnlCls{
+        display: none;
+    }
+    .showMenuListPnlCls{
+        display: flex;
+    }
+    .menuListPnlCls {
+        background: #fff;
+        position: absolute;
+        right: 5px;
+        top: 41%;
+        flex-direction: column;
+        min-width: 140px;
+        border-radius: 4px 0 4px 4px;
+        overflow-x: hidden;
+        z-index: 100;
+        padding: 0 !important;
+        margin: 0;
+        box-shadow: 0px 3px 5px 2px #3a3a3a;
+    }
+    .menuListPnlCls a{
+        box-shadow: none !important;
+        border: none !important;
+        border-left: 5px solid #fff !important;
+        border-right: 1px solid #3a3a3a;
+        padding: 10px !important;
+    }
+    .menuListPnlCls a.active{
+        border-left: 5px solid #000 !important;
+        border-top: 1px solid #f1f1f1 !important;
+    }
+    .sepFilterPnlCls{
+        margin-top: 0 !important;
+    }
+}
+@media all and (max-width:582px){
+    .pageNavPnlCls label{
+        display: inline-block;
+        text-align: left;
+        padding: 0 1%;
+    }
+    .pageNavPnlCls .lblCls{
+        display: block !important;
+        text-align: left;
+    }
+    .responsiveFilter{
+        margin-top: 10px !important;
+    }
+}
+@media all and (max-width:518px){
+    .pageNavPnlCls{
+        text-align: unset !important;
+    }
+    .pagerCls{
+        display: flex !important;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    .regionLeft .imgPosCls{
+        top:-12% !important;        
+        width: 100%;
+        height: auto !important;
+    }
+}
+@media all and (max-width:400px){
+    .regionLeft .imgPosCls{
+        top:0 !important;
+    }
+}
+@media all and (max-width:320px){
+    .pageNavPnlCls label{
+        width: 97%;
+    }
+    .pageNavPnlCls .lblCls{
+        display: inline-block !important;
+    }
+    .pageNavPnlCls label{
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
+}

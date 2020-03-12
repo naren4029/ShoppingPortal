@@ -1,0 +1,8 @@
+<div class="filterRegionHldrCls" *ngIf="windowObj.clientX>922"></div>
+<div class="filterRegionCls" *ngIf="windowObj.clientX>922">
+  <app-sep-filter-panel [dataArr]=getFilterData ></app-sep-filter-panel>
+</div>
+<div class="displayPaletteCls" >
+  <app-sep-sort-view-pagenav [pagesInfo]=getTmplData.links [dataArr]=getFilterData></app-sep-sort-view-pagenav>
+  <app-sep-display-palette [dataArr]=getTmplData.data [loadingFlag]=loadingFlag></app-sep-display-palette>
+</div>

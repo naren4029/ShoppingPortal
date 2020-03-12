@@ -1,0 +1,11 @@
+<ul class="filterCntntCls" *ngIf="dataArr && dataArr.length>0">
+  <li *ngFor="let data of dataArr">
+    <label *ngIf="data.isSingleSelect" >
+      <input type="{{data.isSingleSelect.type}}" name="{{data.isSingleSelect.name}}" [checked]=data.isSingleSelect.checked value="{{data.isSingleSelect.value}}" (change)="onSelectionChange(data.isSingleSelect.value)">
+      {{data.price}}
+    </label>
+    <label *ngIf="!data.isSingleSelect" >
+        <a routerLink="{{data.routeLink}}" routerLinkActive="{{data.routerLinkActive}}" [routerLinkActiveOptions]=data.routerLinkActiveOptions>{{data.label}}</a>
+    </label>
+  </li>
+</ul>

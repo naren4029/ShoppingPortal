@@ -1,0 +1,20 @@
+ul.filterCntntCls{
+    margin: 10px 0;
+    font-size: 14px;
+}
+ul.filterCntntCls li{
+    padding-top: 10px;
+}
+ul.filterCntntCls li label{
+    cursor: pointer;
+}
+ul.filterCntntCls li:first-child{
+    padding: 0;
+}
+ul.filterCntntCls li a{
+    text-decoration: none;
+    color: #000;
+}
+ul.filterCntntCls li a.active{
+    color: #ff7f7f;
+}
